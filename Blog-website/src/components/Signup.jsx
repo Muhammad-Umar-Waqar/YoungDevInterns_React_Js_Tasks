@@ -17,6 +17,7 @@ function Signup() {
     setError("");
     try {
       const session = await authService.createAccount(data); // Creating an account if create successfully then
+      console.log("session after account  creation", session );
       if (session) {
         const userData = await authService.getcurrentUser(); // then take user Data which is created now
         if (userData) dispatch(login(userData));

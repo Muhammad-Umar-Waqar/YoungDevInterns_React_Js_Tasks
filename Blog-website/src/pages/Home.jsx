@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Container, PostCard } from '../components'
 import appwriteService from '../appwrite/config'
 
+
+
 function Home() {
   const [posts, setPosts] = useState([])
 useEffect(()=>{
@@ -11,9 +13,6 @@ useEffect(()=>{
             setPosts(posts.documents)
         }
       })
-      
-
-      
 },[])
 
 if (posts.length === 0) {

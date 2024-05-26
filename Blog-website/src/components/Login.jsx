@@ -52,7 +52,6 @@ function Login() {
         <form onSubmit={handleSubmit(login)}  className='mt-8'>
             <div className="space-y-5">
                 <Input
-                
                 placeholder='Enter your Email'
                 type = "email"
                 {    ...register("email", 
@@ -62,8 +61,7 @@ function Login() {
                         matchPattern : (value) => /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g.test(value) ||  "Email Address must be a valid Adsress"
                     }
                 })   }
-
-                />
+             />
                 <Input
                 type = "password"
                 placeholder = "Enter your password"
